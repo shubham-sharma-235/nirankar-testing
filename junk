@@ -1,0 +1,800 @@
+<!-- work-start -->
+            <!-- <div class="bs-work-1-area wa-p-relative" data-background="assets/img/work/w1-bg-noise-1.png">
+                <div class="container bs-container-1">
+                    <div class="bs-work-1-wrap">
+
+                        <div class="bs-work-1-tabs-btn wa-list-style-none" role="tablist">
+                            
+                            <button class="nav-link active bs-h-1 wa-fadeInUp" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                <span class="number">01</span>
+                                Architecture
+                                <span class="line"></span>
+                            </button>
+
+                            <button class="nav-link wa-fadeInUp" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                <span class="number">02</span>
+                                Interior
+                                <span class="line"></span>
+                            </button>
+
+                            <button class="nav-link wa-fadeInUp" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                <span class="number">03</span>
+                                Decoration Ration
+                                <span class="line"></span>
+                            </button>
+
+                            <button class="nav-link wa-fadeInUp" id="contact-tab2" data-bs-toggle="tab" data-bs-target="#contact2" type="button" role="tab" aria-controls="contact2" aria-selected="false">
+                                <span class="number">04</span>
+                                hotel interior
+                                <span class="line"></span>
+                            </button>
+                        </div>
+
+                        <div class="tab-content  bs-work-1-tabs-item" >
+
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="bs-work-1-tabs-item-single">
+                                    <div class="item-img wa-fix wa-img-cover" data-cursor="-opaque">
+                                        <img src="assets/img/work/w1-img-1.png" alt="">
+                                    </div>
+                                    <p class="bs-p-1 item-disc">
+                                        Whether you’re a home owner, business owners or developer we will not only protect your investment, but we’ll also ensure your design and build journey 
+                                    </p>
+                                    <div class="item-btn">
+                                        <a href="project-details.html" aria-label="name" class="bs-btn-1">
+                                            <span class="text">
+                                                See the Achievement
+                                            </span>
+                                            <span class="shape" ></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="bs-work-1-tabs-item-single">
+                                    <div class="item-img wa-fix wa-img-cover" data-cursor="-opaque">
+                                        <img src="assets/img/work/w1-img-2.png" alt="">
+                                    </div>
+                                    <p class="bs-p-1 item-disc">
+                                        Whether you’re a home owner, business owners or developer we will not only protect your investment, but we’ll also ensure your design and build journey 
+                                    </p>
+                                    <div class="item-btn">
+                                        <a href="project-details.html" aria-label="name" class="bs-btn-1">
+                                            <span class="text">
+                                                See the Achievement
+                                            </span>
+                                            <span class="shape" ></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="bs-work-1-tabs-item-single">
+                                    <div class="item-img wa-fix wa-img-cover" data-cursor="-opaque">
+                                        <img src="assets/img/work/w1-img-3.png" alt="">
+                                    </div>
+                                    <p class="bs-p-1 item-disc">
+                                        Whether you’re a home owner, business owners or developer we will not only protect your investment, but we’ll also ensure your design and build journey 
+                                    </p>
+                                    <div class="item-btn">
+                                        <a href="project-details.html" aria-label="name" class="bs-btn-1">
+                                            <span class="text">
+                                                See the Achievement
+                                            </span>
+                                            <span class="shape" ></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+                                <div class="bs-work-1-tabs-item-single">
+                                    <div class="item-img wa-fix wa-img-cover" data-cursor="-opaque">
+                                        <img src="assets/img/work/w1-img-4.png" alt="">
+                                    </div>
+                                    <p class="bs-p-1 item-disc">
+                                        Whether you’re a home owner, business owners or developer we will not only protect your investment, but we’ll also ensure your design and build journey 
+                                    </p>
+                                    <div class="item-btn">
+                                        <a href="project-details.html" aria-label="name" class="bs-btn-1">
+                                            <span class="text">
+                                                See the Achievement
+                                            </span>
+                                            <span class="shape" ></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-work-1-bg-img wa-fix">
+                    <img class="wa-slideInUp" src="assets/img/work/w1-bg-img-1.png" alt="">
+                </div>
+            </div> -->
+            <!-- work-end -->
+
+            <!-- core-services-start -->
+            <!-- <section class="bs-core-services-2-area wa-bg-default wa-fix" data-background="assets/img/services/core-s2-img-1.png">
+                <div class="bs-core-services-2-wrap">
+                    
+
+                    <div class="bs-core-services-2-item ">
+                        <h5 class="bs-h-2 item-title ">
+                            <span class="wa-split-up wa-capitalize wa-fix">
+                                Architecture
+                            </span>
+                      
+                            <span class="small-text">(20)</span>
+                        </h5>
+                        <div class="content-wrap">
+                            <h5 class="bs-h-2 item-title">
+                                Architecture
+                                <span class="small-text">(20)</span>
+                            </h5>
+
+                            <p class="bs-p-1 item-disc">
+                                Regional Wood Contruction Prize 2022: Publication of the Origami and CND project Wood 
+                            </p>
+
+                            <div class="item-btn">
+                                <a href="project-details.html" aria-label="name" class="bs-btn-1">
+                                    <span class="text">
+                                        learn more about
+                                    </span>
+                                    <span class="shape" ></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item-img wa-fix wa-img-cover">
+                            <img src="assets/img/services/core-s2-img-1.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="bs-core-services-2-item ">
+                        <h5 class="bs-h-2 item-title ">
+                            <span class="wa-split-up wa-capitalize wa-fix">
+                                Sustainable
+                            </span>
+                      
+                            <span class="small-text">(20)</span>
+                        </h5>
+                        <div class="content-wrap">
+                            <h5 class="bs-h-2 item-title">
+                                Sustainable
+                                <span class="small-text">(20)</span>
+                            </h5>
+
+                            <p class="bs-p-1 item-disc">
+                                Regional Wood Contruction Prize 2022: Publication of the Origami and CND project Wood 
+                            </p>
+
+                            <div class="item-btn">
+                                <a href="project-details.html" aria-label="name" class="bs-btn-1">
+                                    <span class="text">
+                                        learn more about
+                                    </span>
+                                    <span class="shape" ></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item-img wa-fix wa-img-cover">
+                            <img src="assets/img/services/core-s2-img-2.png" alt="">
+                        </div>
+                    </div>
+                    
+
+                    <div class="bs-core-services-2-item ">
+                        <h5 class="bs-h-2 item-title ">
+                            <span class="wa-split-up wa-capitalize wa-fix">
+                                Management
+                            </span>
+                      
+                            <span class="small-text">(20)</span>
+                        </h5>
+                        <div class="content-wrap">
+                            <h5 class="bs-h-2 item-title">
+                                Management
+                                <span class="small-text">(20)</span>
+                            </h5>
+
+                            <p class="bs-p-1 item-disc">
+                                Regional Wood Contruction Prize 2022: Publication of the Origami and CND project Wood 
+                            </p>
+
+                            <div class="item-btn">
+                                <a href="project-details.html" aria-label="name" class="bs-btn-1">
+                                    <span class="text">
+                                        learn more about
+                                    </span>
+                                    <span class="shape" ></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item-img wa-fix wa-img-cover">
+                            <img src="assets/img/services/core-s2-img-3.png" alt="">
+                        </div>
+                    </div>
+                    
+
+                    <div class="bs-core-services-2-item ">
+                        <h5 class="bs-h-2 item-title ">
+                            <span class="wa-split-up wa-capitalize wa-fix">
+                                Interior
+                            </span>
+                      
+                            <span class="small-text">(20)</span>
+                        </h5>
+                        <div class="content-wrap">
+                            <h5 class="bs-h-2 item-title">
+                                Interior
+                                <span class="small-text">(20)</span>
+                            </h5>
+
+                            <p class="bs-p-1 item-disc">
+                                Regional Wood Contruction Prize 2022: Publication of the Origami and CND project Wood 
+                            </p>
+
+                            <div class="item-btn">
+                                <a href="project-details.html" aria-label="name" class="bs-btn-1">
+                                    <span class="text">
+                                        learn more about
+                                    </span>
+                                    <span class="shape" ></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="item-img wa-fix wa-img-cover">
+                            <img src="assets/img/services/core-s2-img-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- core-services-end -->
+
+
+            
+             
+            
+
+            <section class="bs-property-1-area pt-155 pb-150">
+            <div class="container bs-container-1">
+                
+                <div class="bs-property-1-wrap">
+        
+                    <!-- single-item 1 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">Crafting Heritage: Hotel Ratan Mahal, Datia, Madhya Pradesh</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/hotel-ratan-mahal.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/hotel-ratan-mahal.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 2 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">Crafting Legacy:The Manyawar Shri Kanshiram Ji Green Eco Garden, Lucknow</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/manyawar-shri-kanshiram.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/manyawar-shri-kanshiram.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 3 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">Restoring Royalty : Red Sandstone Re-construction at Shahpura House, Jaipur</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/red-sandstone-reconstruction.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/red-sandstone-reconstruction.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 4 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">A Symphony in Pink Sandstone: Crafting a Luxurious Rajasthani Haveli</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/symphony-in-pink-sandstone.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/symphony-in-pink-sandstone.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 5 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">Crafting Rajasthani Elegance: RedStone Jarokhas &amp; Balconiesat Umaid Palace</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/crafting-rajasthani-elegance.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/crafting-rajasthani-elegance.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 6 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">Crafting the Seat of Governance: LokBhawan's Yellow Sandstone Grandeur</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/seat-of-governance.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/seat-of-governance.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 7 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">Crafting Justice : The High Court of Judicatureat Allahabad, LucknowBench</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/crafting-justice.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/crafting-justice.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 8 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">The Majestic Vindhyachal Corridor: A Testamentto Craftsmanship</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/vindhyachal-corridor.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/vindhyachal-corridor.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 9 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">The White Mint Masterpiece: ANeo-Classical Villa of Unparalleled Luxury</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/white-mint-masterpiece.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/white-mint-masterpiece.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 10 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">Ratia Temple: A Red Stone Masterpiece of Spiritual Grandeur</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/ratia-temple.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/ratia-temple.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 11 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">A neo-Classical Building in White Mist Stone</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/neo-classical-building.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/neo-classical-building.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- single-item 12 -->
+                    <div class="bs-property-1-item wa-3dUp">
+                        <div class="item-content">
+                            <h4 class="bs-h-2 item-title">
+                                <a href="" aria-label="name">Golden Arches of Kolkata: A Jaisalmer Yellow Stone Masterpiece</a>
+                            </h4>
+                            <a href="" aria-label="name" class="bs-btn-1">
+                                <span class="text">
+                                    more details
+                                </span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                        <div class="img-wrap wa-p-relative">
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/golden-arches.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-img wa-fix wa-img-cover">
+                                <a href="project-details.html" aria-label="name" data-cursor-text="View">
+                                    <img src="assets/img/projects/golden-arches.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- multi-section-start -->
+            <!-- <div class="bs-hero-x-services-area wa-p-relative wa-fix" data-background="assets/img/hero/h3-multi-sec-bg.png"> -->
+            <div class="bs-hero-x-services-area wa-p-relative wa-fix" data-background="">
+                <div class="bs-hero-x-services-shape"></div>
+
+
+            <!-- hero-start -->
+            <section class="bs-hero-3-area wa-fix wa-p-relative" style="background-image: url(&quot;assets/img/services/s4-bg.png&quot;);">
+                <div class="container bs-container-1">
+                    <div class="bs-hero-3-wrap">
+            
+                        <div class="bs-hero-3-content">
+            
+                            <h6 class="bs-subtitle-1 bs-hero-3-subtitle wa-split-clr wa-capitalize" data-split-delay="1s">
+                                <span class="icon">
+                                    <img src="assets/img/hero/h3-start.png" alt="">
+                                </span>
+                                Crafting Landmarks Since 1998
+                            </h6>
+            
+                            <h1 class="bs-h-2 bs-hero-3-title wa-split-clr wa-capitalize" data-split-delay="1s">
+                                Nirankar  
+                                <span>Sandstone</span>
+                                Industries
+                            </h1>
+            
+                            <p class="bs-p-3 bs-hero-3-disc wow fadeInUp">
+                                From temples and havelis to large government structures, we shape every project with precision, heritage, and enduring craftsmanship.
+                            </p>
+            
+                            <div class="bs-hero-3-btn wow fadeInUp">
+                                <a href="about.html" aria-label="name" class="bs-btn-1 text-capitalize">
+                                    <span class="text">learn more about</span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-right-long"></i>
+                                        <i class="fa-solid fa-right-long"></i>
+                                    </span>
+                                    <span class="shape"></span>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <div class="bs-hero-3-img wa-img-cover wa-fix">
+                            <img src="assets/img/hero/h3-img-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bs-hero-3-contact">
+                    <div class="bs-hero-3-contact-box">
+                        <div class="bs-hero-3-contact-social">
+                            <a href="https://www.facebook.com/Stonekarigaribynirankar/" aria-label="name" class="elm-link wa-magnetic-btn">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/stonekarigaribynirankar" aria-label="name" class="elm-link wa-magnetic-btn">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="bs-hero-3-contact-box">
+                        <a href="mailto:Stonekarigaribynirankar@gmail.com" aria-label="name" class="bs-hero-3-contact-mail wa-magnetic-btn">
+                            <i class="fa-solid fa-envelope"></i>
+                            Stonekarigaribynirankar@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- hero-end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- about-start -->
+            <section class="bs-about-4-area pt-45 pb-125 wa-fix">
+                <div class="container bs-container-2">
+                    <h5 class="bs-subtitle-4 ">
+                        <span class="text">about us</span>
+                        <span class="icon">
+                            <img src="assets/img/illus/subtitle-4-icon.svg" alt="">
+                        </span>
+                    </h5>
+
+                    <div class="bs-about-4-wrap">
+
+                        <!-- left-content -->
+                        <div class="bs-about-4-content">
+                            <h2 class="bs-sec-title-4 title wa-split-right wa-capitalize" data-cursor="-opaque">Crafting Timeless Stone Art Rooted in Heritage and Mastery</h2>
+
+                            <div class="inner-div">
+                                <p class="bs-p-4 disc wa-fadeInUp">At Nirankar Sandstone Industries, every design begins with raw stone and a vision. From traditional sculptures to modern installations, we carve stories that celebrate Indian artistry and elevate architectural beauty.</p>
+                                <div class="btn-wrap wa-fadeInUp">
+                                    <a href="about.html" aria-label="name" class="bs-pr-btn-2">
+                                        <span class="text" data-back="Know About Us" data-front="Know About Us"></span>
+                                        <span class="line-1" ></span>
+                                        <span class="line-2" ></span>
+                                        <span class="box box-1" ></span>
+                                        <span class="box box-2" ></span>
+                                        <span class="box box-3" ></span>
+                                        <span class="box box-4" ></span>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <div class="illus wa-clip-left-right">
+                                <img src="assets/img/about/a4-illus-1.png" alt="">
+                            </div>
+    
+                            <!-- feature -->
+                            <div class="bs-about-4-feature">
+    
+                                <!-- single -->
+                                <div class="bs-about-4-feature-single wow fadeInRight">
+                                    <div class="item-icon">
+                                        <i class="flaticon-denver flaticon"></i>
+                                    </div>
+                                    <h4 class="bs-h-4 item-title">
+                                        <a href="services-details.html" aria-label="name">Handcrafted Excellence</a>
+                                    </h4>
+                                    <p class="bs-p-4 item-disc">Each sculpture is shaped by skilled artisans who breathe life into every grain of stone.</p>
+                                </div>
+    
+                                <!-- single -->
+                                <div class="bs-about-4-feature-single wow fadeInRight" data-wow-delay=".2s">
+                                    <div class="item-icon">
+                                        <i class="flaticon-goodwill-1 flaticon"></i>
+                                    </div>
+                                    <h4 class="bs-h-4 item-title">
+                                        <a href="services-details.html" aria-label="name">Bespoke Creations</a>
+                                    </h4>
+                                    <p class="bs-p-4 item-disc">Each piece is custom-made to complement your space — designed with precision, emotion, and artistry.</p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        
+                        <div class="bs-about-4-right">
+
+                            <div class="bs-about-4-project wa-bg-default wa-parallax-item-right-left" data-background="assets/img/about/a4-bg-img-1.png" >
+                                <div class="icon">
+                                    <i class="flaticon-right-arrow flaticon"></i>
+                                </div>
+                                <h4 class="bs-h-4 title">
+                                    <a href="projects.html" aria-label="name">see projects</a>
+                                </h4>
+                                <p class="bs-p-4 disc">discover the architecture and design projects team with Barsi prater.</p>
+                            </div>
+
+                            <div class="bs-about-4-img wa-fix wa-img-cover">
+                                <img class="wa-parallax-img" src="assets/img/about/a4-img-1.png" alt="">
+                            </div>
+
+                            <div class="illus-2">
+                                <img  src="assets/img/about/a4-illus-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about-end -->

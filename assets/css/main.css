@@ -76,7 +76,7 @@ CSS INDEX
   --bs-font-2: "Space Grotesk", serif;
   --bs-font-3: "DM Sans", serif;
   --allura: "Allura", serif;
-  --bs-clr-pr-1: #f16319;
+  --bs-clr-pr-1: #F5AC83;
   --lw-clr-sd-1: #C4EF17;
   --bs-clr-h-4: #060606;
   --bs-clr-white-1: #ffffff;
@@ -18712,3 +18712,560 @@ Primary style
 */
 
 /*# sourceMappingURL=main.css.map */
+
+
+
+
+
+
+
+
+
+
+
+.bs-header-4-logo {
+    background: #fff;
+    max-width: 80px;
+}
+.bs-video-4-text-item {
+    font-size: 235px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 4px 4px 0px #6A6A6A;
+    color: #fff;
+}
+.bs-choose-4-content::after {
+    content: "";
+    width: 200%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #6c0b4d;
+    background: linear-gradient(45deg,#9C2978,#F4A984);
+    z-index: -1;
+    position: absolute;
+}
+
+.icon svg{
+  fill: #fff!important;
+}
+
+@media (min-width: 1600px) {
+    .container.bs-container-2 {
+        max-width: 1430px;
+    }
+}
+
+.bs-footer-4-contact .disc-elm, .bs-footer-4-contact .link-elm {
+    font-size: 20px;
+}
+
+.bs-footer-4-logo img{
+  height: 6rem;
+}
+
+.nav-active{
+  color: var(--bs-clr-pr-1)!important;
+}
+
+.breadcrumb-title {
+    font-size: 70px;
+}
+
+.bs-header-4-logo {
+    padding: 10px;
+}
+
+.bs-blog-4-item .item-img {
+    height: 500px;
+    filter: grayscale(0);
+}
+
+.bs-blog-4-item .title {
+    margin-top: 1rem;
+}
+
+.bs-header-3-main-left .bs-main-navigation .navbar-nav li a {
+    color: #fff!important;
+}
+
+.bs-hero-3-title {
+    color: #000;
+}
+
+.bs-hero-3-contact-mail {
+    gap: 10px;
+    font-size: 18px;
+}
+
+.bs-hero-x-services-area {
+    padding-top: 123px;
+}
+
+.bs-hero-3-contact-box {
+    height: 40%;
+    border-top: none;
+}
+
+.line-1, .line-2{
+  display: none;
+}
+
+.bs-pr-btn-2:hover {
+    border-color: var(--bs-clr-pr-1);
+    background-color: var(--bs-clr-pr-1);
+}
+
+/* .bs-core-feature-4-wrap {
+    background-color: #fff3fba0;
+} */
+
+.breadcrumb-area:is(.has-2) {
+    padding-top: 64px;
+}
+
+/*  .wa-img-cover img {
+    border: 3px solid #B0137E;
+} */
+
+/* Sticky WhatsApp button (left side) */
+.whatsapp-float {
+    position: fixed;
+    left: 20px;
+    bottom: 20px; /* move up/down as needed */
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #25D366; /* light WhatsApp green */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    opacity: 0.95;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+    opacity: 1;
+}
+
+.whatsapp-icon {
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+
+/* -------------------------------------- */
+
+.nirankar-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+/* SLIDER */
+.nirankar-hero .hero-carousel {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Lighter black gradient from top → transparent */
+.nirankar-hero .hero-carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+.nirankar-hero .hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nirankar-hero .hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08); /* start slightly zoomed in */
+}
+
+/* Active slide = visible + zoom out */
+.nirankar-hero .hero-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.nirankar-hero .hero-slide.active img {
+  animation: nirankarZoomOut 6s ease-out forwards;
+}
+
+@keyframes nirankarZoomOut {
+  0% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* CENTERED TEXT WRAPPER */
+.nirankar-hero .hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Inner so we can scale on scroll */
+.nirankar-hero .hero-title-inner {
+  text-align: center;
+  color: #f5f5f5;
+  animation: titleEnter 1.4s ease-out forwards;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* Main + Sub text */
+.nirankar-hero .hero-title-main {
+  display: block;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-weight: 500;
+}
+
+.nirankar-hero .hero-title-sub {
+  display: block;
+  margin-top: 0.5em;
+  font-size: clamp(1.1rem, 2.1vw, 1.6rem);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  /* subtle warm stone gradient */
+  background: linear-gradient(120deg, #f3e1c4, #d9b58a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Thin line under text for premium feel */
+.nirankar-hero .hero-title-line {
+  display: block;
+  width: 120px;
+  height: 1px;
+  margin: 1.2em auto 0;
+  background: linear-gradient(to right, transparent, #f3e1c4, transparent);
+  opacity: 0.9;
+}
+
+/* Title entrance animation */
+@keyframes titleEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .nirankar-hero .hero-title-main {
+    letter-spacing: 0.25em;
+  }
+  .nirankar-hero .hero-title-sub {
+    letter-spacing: 0.22em;
+  }
+}
+
+@media (max-width: 480px) {
+  .nirankar-hero .hero-title-main {
+    letter-spacing: 0.18em;
+  }
+  .nirankar-hero .hero-title-sub {
+    letter-spacing: 0.16em;
+  }
+}
+
+.nirankar-hero .hero-title-sub {
+    margin-top: .8em;
+}
+
+.nirankar-hero .hero-title-line {
+    display: block;
+    width: 129px;
+    height: 2px;
+    margin: 1.2em auto 0;
+    background: linear-gradient(to right, transparent, #f3e1c4, transparent);
+    opacity: 0.9;
+    margin-top: 22px;
+}
+
+/* -------------------------------------- */
+
+/* ===== PRELOADER OVERLAY ===== */
+.nirankar-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #f8f6f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inner container */
+.nirankar-preloader-inner {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  color: #222;
+  padding: 24px 32px;
+}
+
+/* Logo text */
+.preloader-logo {
+  margin-bottom: 18px;
+}
+
+.preloader-logo .logo-main {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+
+.preloader-logo .logo-sub {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  margin-top: 6px;
+  color: #B0137E;
+}
+
+/* Circular loader */
+.preloader-loader {
+  margin: 20px auto 18px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-ring {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid rgba(176, 19, 126, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.loader-ring::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border-top: 3px solid #B0137E;
+  border-right: 3px solid #B0137E;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+  animation: spinRing 1s linear infinite;
+}
+
+.loader-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #B0137E;
+  box-shadow: 0 0 12px rgba(176, 19, 126, 0.7);
+}
+
+/* Progress bar */
+.preloader-bar-wrap {
+  margin: 10px auto 10px auto;
+  max-width: 260px;
+}
+
+.preloader-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+.preloader-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #B0137E, #e466c2);
+  transition: width 0.2s ease;
+}
+
+.preloader-percent {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-top: 6px;
+  color: #666;
+}
+
+/* Bottom text */
+.preloader-text {
+  font-size: 13px;
+  color: #777;
+  margin-top: 16px;
+}
+
+/* Fade-out animation */
+.nirankar-preloader.fade-out {
+  animation: preloaderFadeOut 0.7s ease forwards;
+}
+
+/* Hide page content initially */
+#nirankarPageContent {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+/* Keyframes */
+@keyframes spinRing {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes preloaderFadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .preloader-logo .logo-main {
+    font-size: 22px;
+    letter-spacing: 0.2em;
+  }
+  .preloader-logo .logo-sub {
+    letter-spacing: 0.24em;
+  }
+}
+
+/* -------------------------------------- */
+
+.ns-contact-section {
+    border-top: 1px solid #eee;
+    padding: 40px 0;
+    padding-top: 16px;
+}
+
+.ns-contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px; /* LEFT + RIGHT padding added */
+}
+
+.ns-contact-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.ns-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 18px;
+}
+
+.ns-contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 15px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.ns-contact-list .icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ns-contact-list h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.ns-contact-list p {
+    margin: 3px 0 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+/* -------------------------------------- */
+
+.bs-work-process-item {
+    max-width: 1200px;
+}
+
+.wa-offcanvas-top-logo {
+    max-width: 110px;
+}
+
+.wa-offcanvas-top {
+    margin-bottom: 20px;
+}
+
+.wa-offcanvas-area {
+    max-width: 390px;
+}
+
+.wa-offcanvas-area {
+    padding: 30px 40px;
+}
+

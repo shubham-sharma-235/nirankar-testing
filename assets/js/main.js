@@ -2608,3 +2608,20 @@ const cursor = new Cursor();
 
 
 })(jQuery);
+
+// Sticky WhatsApp Button Logic
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("whatsappButton");
+
+    if (!btn) return;
+
+    btn.addEventListener("click", function () {
+        const phone = btn.getAttribute("data-phone") || "";
+        // Optional pre-filled message
+        const message = encodeURIComponent(
+            "Hello, I’d like to know more about your products and stone work."
+        );
+        const url = `https://wa.me/${phone}?text=${message}`;
+        window.open(url, "_blank");
+    });
+});
