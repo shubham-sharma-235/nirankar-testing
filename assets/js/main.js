@@ -2625,3 +2625,36 @@ document.addEventListener("DOMContentLoaded", function () {
         window.open(url, "_blank");
     });
 });
+
+// Simple preloader with fake progress + hide on window load
+(function () {
+  var preloader = document.getElementById("nirankarPreloader");
+  var bar = document.getElementById("nirankarPreloaderBar");
+  var percentText = document.getElementById("nirankarPreloaderPercent");
+  var pageContent = document.getElementById("nirankarPageContent");
+
+  var progress = 0;
+  var fakeLoader = setInterval(function () {
+    // increase progress slowly until 90%
+    if (progress < 90) {
+      progress += Math.floor(Math.random() * 8) + 3; // +3 to +10
+      if (progress > 90) progress = 90;
+      bar.style.width = progress + "%";
+      percentText.textContent = progress + "%";
+    }
+  }, 200);
+
+  window.addEventListener("load", function () {
+    // when page loaded, quickly complete to 100%
+    clearInterval(fakeLoader);
+    progress = 100;
+    bar.style.width = "100%";
+    percentText.textContent = "100%";
+
+    // small delay for visual satisfaction
+    setTimeout(function () {
+      preloader.classList.add("fade-out");
+      pageContent.style.opacity = "1";
+    }, 400);
+  });
+})();
