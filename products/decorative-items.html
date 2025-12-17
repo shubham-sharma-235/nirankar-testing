@@ -83,7 +83,7 @@
 
                               <li><a href="../products.html">Our Products</a></li>
 
-                              <li><a href="../blog.html">Our Blogs</a></li>
+                              <li><a href="../blogs/blog.html">Our Blogs</a></li>
       
                               <li><a href="../contact-us.html">Contact Us</a></li>
                           </ul>
@@ -268,56 +268,42 @@
           <div class="bs-footer-4-wrap mb-125">
             <!-- left-side -->
             <div class="bs-footer-4-left">
-              <a href="index-4.html" aria-label="name" class="bs-footer-4-logo">
-                <img src="assets/img/logo/logo-2.svg" alt="" />
-              </a>
+                <a href="index-4.html" aria-label="name" class="bs-footer-4-logo">
+                    <img src="assets/img/logo/logo-2.svg" alt="">
+                </a>
 
-              <div class="bs-footer-4-widget">
-                <!-- single-widget -->
-                <div class="bs-footer-4-widget-single">
-                  <ul class="bs-footer-4-menu wa-list-style-none">
-                    <li>
-                      <a href="index-4.html" aria-label="name">home</a>
-                    </li>
-                    <li>
-                      <a href="about.html" aria-label="name">about us</a>
-                    </li>
-                    <li>
-                      <a href="services-4.html" aria-label="name">services</a>
-                    </li>
-                    <li>
-                      <a href="projects-3.html" aria-label="name">projects</a>
-                    </li>
-                    <li>
-                      <a href="blog-3.html" aria-label="name">blog</a>
-                    </li>
-                    <li>
-                      <a href="choose-us.html" aria-label="name">contact us</a>
-                    </li>
-                  </ul>
-                </div>
+                <div class="bs-footer-4-widget">
 
-                <!-- single-widget -->
-                <div class="bs-footer-4-widget-single">
-                  <ul class="bs-footer-4-menu wa-list-style-none">
-                    <li>
-                      <a href="price.html" aria-label="name">pricing plan</a>
-                    </li>
-                    <li>
-                      <a href="testimonial.html" aria-label="name">clients</a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="name">privacy policy</a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="name">terms and conditions</a>
-                    </li>
-                    <li>
-                      <a href="404.html" aria-label="name">404</a>
-                    </li>
-                  </ul>
+                    <!-- single-widget -->
+                    <div class="bs-footer-4-widget-single">
+                        <ul class="bs-footer-4-menu wa-list-style-none" >
+                            <li>
+                                <a href="../index.html" aria-label="name">home</a>
+                            </li>
+                            <li>
+                                <a href="../about.html" aria-label="name">About us</a>
+                            </li>
+                            <li>
+                                <a href="../projects.html" aria-label="name">Our Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- single-widget -->
+                    <div class="bs-footer-4-widget-single">
+                        <ul class="bs-footer-4-menu wa-list-style-none" >
+                            <li>
+                                <a href="../products.html" aria-label="name">Our Products</a>
+                            </li>
+                            <li>
+                                <a href="../blogs/blog.html" aria-label="name">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="../contact-us.html" aria-label="name">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </div>
 
             <!-- right -->
@@ -545,121 +531,121 @@
     <script src="../assets/js/ScrollTrigger.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script>
-  const items = Array.from(document.querySelectorAll(".pg-item"));
-  const modal = document.getElementById("pgModal");
-  const modalImg = document.getElementById("pgModalImg");
-  const closeBtn = document.getElementById("pgCloseBtn");
-  const prevBtn = document.getElementById("pgPrevBtn");
-  const nextBtn = document.getElementById("pgNextBtn");
-  const counter = document.getElementById("pgCounter");
-  const captionEl = document.getElementById("pgCaption");
-
-  let currentIndex = 0;
-
-  function updateModalContent() {
-    const item = items[currentIndex];
-    if (!item) return;
-
-    const imgEl = item.querySelector("img");
-    const src = imgEl.getAttribute("src");
-    const alt = imgEl.getAttribute("alt") || "Gallery image";
-
-    modalImg.src = src;
-    modalImg.alt = alt;
-    captionEl.textContent = alt;
-    counter.textContent = (currentIndex + 1) + " / " + items.length;
-  }
-
-  function openModal(index) {
-    currentIndex = index;
-    updateModalContent();
-    modal.classList.add("pg-open");
-    document.body.style.overflow = "hidden";
-  }
-
-  function closeModal() {
-    modal.classList.remove("pg-open");
-    document.body.style.overflow = "";
-  }
-
-  function showNext() {
-    currentIndex = (currentIndex + 1) % items.length;
-    updateModalContent();
-  }
-
-  function showPrev() {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    updateModalContent();
-  }
-
-  items.forEach((item, index) => {
-    item.addEventListener("click", () => openModal(index));
-  });
-
-  closeBtn.addEventListener("click", closeModal);
-  nextBtn.addEventListener("click", showNext);
-  prevBtn.addEventListener("click", showPrev);
-
-  // Close on click outside shell
-  modal.addEventListener("click", (e) => {
-    if (!e.target.closest(".pg-modal-shell")) {
-      closeModal();
-    }
-  });
-
-  // Keyboard support
-  document.addEventListener("keydown", (e) => {
-    if (!modal.classList.contains("pg-open")) return;
-    if (e.key === "Escape") closeModal();
-    if (e.key === "ArrowRight") showNext();
-    if (e.key === "ArrowLeft") showPrev();
-  });
-
-  // Swipe (touch) navigation
-  let touchStartX = null;
-
-  modalImg.addEventListener("touchstart", (e) => {
-    if (!e.touches || e.touches.length !== 1) return;
-    touchStartX = e.touches[0].clientX;
-  });
-
-  modalImg.addEventListener("touchend", (e) => {
-    if (touchStartX === null) return;
-    const endX = e.changedTouches[0].clientX;
-    const deltaX = endX - touchStartX;
-
-    if (deltaX > 60) {
-      showPrev();
-    } else if (deltaX < -60) {
-      showNext();
-    }
-
-    touchStartX = null;
-  });
-
-  // Drag navigation for desktop
-  let isDragging = false;
-  let dragStartX = null;
-
-  modalImg.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    dragStartX = e.clientX;
-  });
-
-  window.addEventListener("mouseup", (e) => {
-    if (!isDragging) return;
-    const dragEndX = e.clientX;
-    const deltaX = dragEndX - dragStartX;
-
-    if (deltaX > 80) {
-      showPrev();
-    } else if (deltaX < -80) {
-      showNext();
-    }
-
-    isDragging = false;
-    dragStartX = null;
-  });
-</script>
+      const items = Array.from(document.querySelectorAll(".pg-item"));
+      const modal = document.getElementById("pgModal");
+      const modalImg = document.getElementById("pgModalImg");
+      const closeBtn = document.getElementById("pgCloseBtn");
+      const prevBtn = document.getElementById("pgPrevBtn");
+      const nextBtn = document.getElementById("pgNextBtn");
+      const counter = document.getElementById("pgCounter");
+      const captionEl = document.getElementById("pgCaption");
+    
+      let currentIndex = 0;
+    
+      function updateModalContent() {
+        const item = items[currentIndex];
+        if (!item) return;
+    
+        const imgEl = item.querySelector("img");
+        const src = imgEl.getAttribute("src");
+        const alt = imgEl.getAttribute("alt") || "Gallery image";
+    
+        modalImg.src = src;
+        modalImg.alt = alt;
+        captionEl.textContent = alt;
+        counter.textContent = (currentIndex + 1) + " / " + items.length;
+      }
+    
+      function openModal(index) {
+        currentIndex = index;
+        updateModalContent();
+        modal.classList.add("pg-open");
+        document.body.style.overflow = "hidden";
+      }
+    
+      function closeModal() {
+        modal.classList.remove("pg-open");
+        document.body.style.overflow = "";
+      }
+    
+      function showNext() {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateModalContent();
+      }
+    
+      function showPrev() {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateModalContent();
+      }
+    
+      items.forEach((item, index) => {
+        item.addEventListener("click", () => openModal(index));
+      });
+    
+      closeBtn.addEventListener("click", closeModal);
+      nextBtn.addEventListener("click", showNext);
+      prevBtn.addEventListener("click", showPrev);
+    
+      // Close on click outside shell
+      modal.addEventListener("click", (e) => {
+        if (!e.target.closest(".pg-modal-shell")) {
+          closeModal();
+        }
+      });
+    
+      // Keyboard support
+      document.addEventListener("keydown", (e) => {
+        if (!modal.classList.contains("pg-open")) return;
+        if (e.key === "Escape") closeModal();
+        if (e.key === "ArrowRight") showNext();
+        if (e.key === "ArrowLeft") showPrev();
+      });
+    
+      // Swipe (touch) navigation
+      let touchStartX = null;
+    
+      modalImg.addEventListener("touchstart", (e) => {
+        if (!e.touches || e.touches.length !== 1) return;
+        touchStartX = e.touches[0].clientX;
+      });
+    
+      modalImg.addEventListener("touchend", (e) => {
+        if (touchStartX === null) return;
+        const endX = e.changedTouches[0].clientX;
+        const deltaX = endX - touchStartX;
+    
+        if (deltaX > 60) {
+          showPrev();
+        } else if (deltaX < -60) {
+          showNext();
+        }
+    
+        touchStartX = null;
+      });
+    
+      // Drag navigation for desktop
+      let isDragging = false;
+      let dragStartX = null;
+    
+      modalImg.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        dragStartX = e.clientX;
+      });
+    
+      window.addEventListener("mouseup", (e) => {
+        if (!isDragging) return;
+        const dragEndX = e.clientX;
+        const deltaX = dragEndX - dragStartX;
+    
+        if (deltaX > 80) {
+          showPrev();
+        } else if (deltaX < -80) {
+          showNext();
+        }
+    
+        isDragging = false;
+        dragStartX = null;
+      });
+    </script>
   </body>
 </html>
