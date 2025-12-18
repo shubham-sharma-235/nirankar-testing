@@ -18889,7 +18889,7 @@ Primary style
   top: 0;
   left: 0;
   width: 100%;
-  height: 55%;
+  height: 65%;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.7),
@@ -18963,6 +18963,7 @@ Primary style
   text-transform: uppercase;
   letter-spacing: 0.35em;
   font-weight: 500;
+  font-family: var(--bs-font-1);
 }
 
 .nirankar-hero .hero-title-sub {
@@ -18972,6 +18973,7 @@ Primary style
   letter-spacing: 0.28em;
   text-transform: uppercase;
   font-weight: 400;
+  font-family: var(--bs-font-2);
 
   /* subtle warm stone gradient */
   background: linear-gradient(120deg, #f3e1c4, #d9b58a);
