@@ -2658,3 +2658,218 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 400);
   });
 })();
+
+(function(){
+  const root = document.getElementById("qcMarquee");
+  const track = document.getElementById("qcMarqueeTrack");
+  if(!root || !track) return;
+
+  // Duplicate content enough times to cover the viewport smoothly.
+  function buildLoop(){
+    // Reset to original content (keep first set)
+    const originals = Array.from(track.children).map(n => n.cloneNode(true));
+    track.innerHTML = "";
+    originals.forEach(n => track.appendChild(n));
+
+    // Add duplicates until track is wide enough
+    const minWidth = root.clientWidth * 2.2; // buffer for smooth looping
+    while(track.scrollWidth < minWidth){
+      originals.forEach(n => track.appendChild(n.cloneNode(true)));
+    }
+  }
+
+  buildLoop();
+
+  let x = 0;             // current translateX
+  let v = 0;             // velocity
+  let auto = -0.6;       // auto speed (negative = left)
+  let isDown = false;
+  let startX = 0;
+  let lastClientX = 0;
+  let lastTime = 0;
+
+  function getClientX(e){
+    return (e.touches && e.touches[0]) ? e.touches[0].clientX : e.clientX;
+  }
+
+  function wrap(){
+    // Wrap within one "cycle" length so it feels infinite
+    // Use a safe cycle length: width of the first "set" approximation
+    const cycle = track.scrollWidth / 2;
+    if (cycle > 0){
+      if (x <= -cycle) x += cycle;
+      if (x >= 0) x -= cycle;
+    }
+  }
+
+  function tick(){
+    if(!isDown){
+      // Auto move + friction
+      v += auto * 0.02;
+      v *= 0.985;
+      x += v;
+    }else{
+      // While dragging, keep some friction so it doesn't feel slippery
+      v *= 0.92;
+      x += v;
+    }
+
+    wrap();
+    track.style.transform = `translate3d(${x}px,0,0)`;
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  function onDown(e){
+    isDown = true;
+    root.classList.add("qc-is-dragging");
+    const cx = getClientX(e);
+    startX = cx - x;
+    lastClientX = cx;
+    lastTime = performance.now();
+  }
+
+  function onMove(e){
+    if(!isDown) return;
+    const cx = getClientX(e);
+    const now = performance.now();
+    const dx = cx - lastClientX;
+    const dt = Math.max(1, now - lastTime);
+
+    x = cx - startX;
+    // velocity based on drag movement
+    v = dx / dt * 16; // scale factor for nice inertia
+
+    lastClientX = cx;
+    lastTime = now;
+
+    wrap();
+    track.style.transform = `translate3d(${x}px,0,0)`;
+    e.preventDefault?.();
+  }
+
+  function onUp(){
+    isDown = false;
+    root.classList.remove("qc-is-dragging");
+  }
+
+  // Mouse
+  root.addEventListener("mousedown", onDown);
+  window.addEventListener("mousemove", onMove, {passive:false});
+  window.addEventListener("mouseup", onUp);
+
+  // Touch
+  root.addEventListener("touchstart", onDown, {passive:true});
+  root.addEventListener("touchmove", onMove, {passive:false});
+  root.addEventListener("touchend", onUp);
+
+  // Optional: pause auto on hover
+  root.addEventListener("mouseenter", () => { root.classList.add("qc-is-hover"); auto = 0; });
+  root.addEventListener("mouseleave", () => { root.classList.remove("qc-is-hover"); auto = -0.6; });
+
+  // Rebuild on resize (important for Shopify responsive sections)
+  let rAF = null;
+  window.addEventListener("resize", () => {
+    cancelAnimationFrame(rAF);
+    rAF = requestAnimationFrame(() => {
+      const prevX = x;
+      buildLoop();
+      x = prevX;
+      wrap();
+    });
+  });
+})();
+
+
+(function () {
+  const viewport = document.getElementById('imViewport');
+  const track = document.getElementById('imTrack');
+  if (!viewport || !track) return;
+  // CONFIG
+  const AUTO_SPEED_PX_PER_SEC = 42;
+  const RESUME_AFTER_MS = 900;
+  // Clone once to make seamless loop
+  const originalItems = Array.from(track.children);
+  originalItems.forEach(node => track.appendChild(node.cloneNode(true)));
+  // Measure width of the original set
+  function getOriginalWidth() {
+    const items = Array.from(track.children).slice(0, originalItems.length);
+    let w = 0;
+    for (const el of items) w += el.getBoundingClientRect().width;
+    const style = getComputedStyle(track);
+    const gap = parseFloat(style.columnGap || style.gap || 0);
+    w += gap * (items.length - 1);
+    return w;
+  }
+  let originalWidth = 0;
+  let x = 0;
+  function apply() {
+    track.style.transform = `translate3d(${-x}px,0,0)`;
+  }
+  function recalc() {
+    originalWidth = getOriginalWidth();
+    if (!originalWidth) return;
+    x = ((x % originalWidth) + originalWidth) % originalWidth;
+    apply();
+  }
+  // Auto animation
+  let lastT = performance.now();
+  let isPaused = false;
+  let resumeTimer = null;
+  function tick(t) {
+    const dt = (t - lastT) / 1000;
+    lastT = t;
+    if (!isPaused && originalWidth) {
+      x += AUTO_SPEED_PX_PER_SEC * dt;
+      if (x >= originalWidth) x -= originalWidth;
+      apply();
+    }
+    requestAnimationFrame(tick);
+  }
+  // Drag/swipe
+  let isDown = false;
+  let startX = 0;
+  let startOffset = 0;
+  function pauseTemporarily() {
+    isPaused = true;
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(() => { isPaused = false; }, RESUME_AFTER_MS);
+  }
+  function onDown(clientX) {
+    isDown = true;
+    startX = clientX;
+    startOffset = x;
+    pauseTemporarily();
+  }
+  function onMove(clientX) {
+    if (!isDown || !originalWidth) return;
+    const dx = clientX - startX;
+    x = startOffset - dx;
+    x = ((x % originalWidth) + originalWidth) % originalWidth;
+    apply();
+  }
+  function onUp() {
+    isDown = false;
+    pauseTemporarily();
+  }
+  viewport.addEventListener('mousedown', (e) => onDown(e.clientX));
+  window.addEventListener('mousemove', (e) => onMove(e.clientX));
+  window.addEventListener('mouseup', onUp);
+  viewport.addEventListener('touchstart', (e) => {
+    if (!e.touches || !e.touches[0]) return;
+    onDown(e.touches[0].clientX);
+  }, { passive: true });
+  viewport.addEventListener('touchmove', (e) => {
+    if (!e.touches || !e.touches[0]) return;
+    onMove(e.touches[0].clientX);
+  }, { passive: true });
+  viewport.addEventListener('touchend', onUp);
+  // Prevent native drag ghost
+  track.addEventListener('dragstart', (e) => e.preventDefault());
+  // Recalc on load/resize
+  window.addEventListener('load', recalc);
+  window.addEventListener('resize', recalc);
+  recalc();
+  requestAnimationFrame(tick);
+})();
+

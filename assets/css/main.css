@@ -10486,7 +10486,7 @@ Primary style
 }
 .bs-video-4-text {
   position: absolute;
-  bottom: -62px;
+  bottom: -16px;
   left: 0;
   width: 100%;
 }
@@ -10496,7 +10496,7 @@ Primary style
   }
 }
 .bs-video-4-text-item {
-  font-size: 235px;
+  font-size: 156px!important;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 1;
@@ -19288,5 +19288,112 @@ Primary style
 
 .bs-services-5-left {
     padding-bottom: 7rem;
+}
+
+/* ------------------------------ */
+
+.qc-marquee{
+  --accent: #B0137E;
+  --gap: 18px;
+  --padY: 14px;
+  --padX: 16px;
+  --radius: 14px;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+  cursor: grab;
+  padding: var(--padY) 0;
+  background: #feecf9;
+}
+.qc-marquee:active{ cursor: grabbing; }
+.qc-marquee__track{
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap);
+  will-change: transform;
+  transform: translate3d(0,0,0);
+}
+.qc-marquee__item{
+  font-size: clamp(14px, 1.1vw, 16px);
+  letter-spacing: .25px;
+  white-space: nowrap;
+  padding: 10px var(--padX);
+  border-radius: 999px;
+  border: 1px solid rgba(176, 19, 126, 0.12); /* subtle accent */
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(6px);
+  transition: color .25s ease, border-color .25s ease;
+}
+.qc-marquee__item:hover{
+  color: var(--accent); /* very soft interaction cue */
+  border-color: rgba(176, 19, 126, 0.25);
+}
+.qc-marquee__sep{
+  font-size: 14px;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.45; /* keeps it understated */
+}
+
+/* ------------------------------------- */
+
+.im-strip{
+  --gap: 14px;
+  --visible: 4;          /* portrait needs more width than landscape */
+  --img-h: 420px;        /* increased height */
+  --accent: #B0137E;     /* available if you want subtle accents later */
+  width: min(1500px, calc(100% - 48px));
+  margin: 24px auto;
+}
+/* Responsive: reduce images per view as screen gets smaller */
+@media (max-width: 1100px){ .im-strip{ --visible: 3; } }
+@media (max-width: 820px) { .im-strip{ --visible: 2; } }
+@media (max-width: 520px) { .im-strip{ --visible: 1.35; } } /* partial next image hint */
+.im-strip__viewport{
+  overflow: hidden;
+  background: transparent; /* no container styling */
+  touch-action: pan-y;     /* smooth horizontal drag */
+}
+.im-strip__track{
+  display: flex;
+  gap: var(--gap);
+  padding: 0;              /* no “card strip” padding */
+  will-change: transform;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.im-item{
+  flex: 0 0 calc((100% - (var(--gap) * (var(--visible) - 1))) / var(--visible));
+  display: block;
+  border-radius: 0;        /* no card edges */
+  overflow: hidden;        /* safe for hover scale */
+  cursor: grab;
+}
+.im-item:active{ cursor: grabbing; }
+/* Portrait-safe: prevents elongation */
+.im-item img{
+  width: 100%;
+  height: var(--img-h);
+  object-fit: cover;       /* key for no stretching */
+  display: block;
+  filter: grayscale(1);
+  transform: scale(1);     /* prevents hover jump */
+  transform-origin: center;
+  transition: filter .25s ease, transform .25s ease;
+}
+.im-item:hover img{
+  filter: grayscale(0);
+  transform: scale(1.02);
+}
+/* Optional: if you want even taller on large screens */
+@media (min-width: 1200px){
+  .im-strip{ --img-h: 480px; }
+}
+@media (max-width: 600px){
+  .im-strip {
+    width: 93vw;
+  }
 }
 
