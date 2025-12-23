@@ -19397,3 +19397,9 @@ Primary style
   }
 }
 
+.bs-header-3-main::after {
+      background: transparent;
+}
+.bs-header-3-main.d-flex.align-items-center {
+    background: transparent!important;
+}
