@@ -19403,3 +19403,7 @@ Primary style
 .bs-header-3-main.d-flex.align-items-center {
     background: transparent!important;
 }
+
+.breadcrumb-bg-img img {
+    opacity: 70%;
+}
