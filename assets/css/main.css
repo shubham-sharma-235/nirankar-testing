@@ -19407,3 +19407,23 @@ Primary style
 .breadcrumb-bg-img img {
     opacity: 70%;
 }
+
+@media(max-width:600px){
+  .bs-about-5-sec-title {
+    margin: 0;
+  }
+  .bs-about-5-sec-title h2 {
+    font-size: 2.4rem;
+  }
+  .bs-about-5-area{
+    padding-top: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+    .bs-video-4-content {
+        height: 215px;
+    }
+    .bs-video-4-text-item {
+      font-size: 71px !important;
+    }
+}
