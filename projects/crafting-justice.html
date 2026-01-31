@@ -33,6 +33,17 @@
             .bs-core-feature-4-wrap {
                 background-color: #fff;
             }
+            .bs-header-3-area {
+            position: relative;
+            z-index: 999; /* Isse header sabse upar rahega */
+            width: 100%;
+            }
+
+            .bs-header-3-main.d-flex.align-items-center {
+                height: 5rem;
+                background: #1f1f1f !important; /* Force background color */
+                display: flex !important; /* Ensure it stays visible */
+            }
         </style>
     </head>
 
@@ -55,69 +66,69 @@
             </div>
 
             <!-- start preloader -->
-            <div class="lw-preloader">
+            <!-- <div class="lw-preloader">
                 <div class="lw-preloader-content">
                     <div class="bs-preloader-logo">
                         <img src="../assets/img/logo/logo-2.svg" alt="">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- end preloader -->
 
             <!-- header-start -->
             <header class="bs-header-3-area ">
-                <!-- main-header -->
-                <div class="bs-header-3-main d-flex align-items-center ">
+          <!-- main-header -->
+          <div class="bs-header-3-main d-flex align-items-center ">
 
-                    <div class="container bs-container-1">
-                        <div class="bs-header-3-main-left">
+              <div class="container bs-container-1">
+                  <div class="bs-header-3-main-left">
 
-                            <!-- logo -->
-                            <a href="../index.html" aria-label="name" class="bs-header-logo-3">
-                                <img src="../assets/img/logo/logo-2.png" alt=""  style="height: 4rem;">
-                            </a>
+                      <!-- logo -->
+                      <a href="../index.html" aria-label="name" class="bs-header-logo-3">
+                          <img src="../assets/img/logo/logo-2.png" alt=""  style="height: 4rem;">
+                      </a>
     
     
-                            <!-- menu -->
-                            <nav class="bs-main-navigation  d-none d-lg-block">
-                                <ul id="main-nav" class="nav navbar-nav ">
-                                    <li><a href="../index.html">Home</a></li>
-        
-                                    <li class="dropdown">
-                                        <a href="#">About</a>
-                                        <ul class="dropdown-menu clearfix">
-                                            <li><a href="../about.html">About Us</a></li>
-                                            <li><a href="../behind-the-craft.html">Behind the Craft</a></li>
-                                        </ul>
-                                    </li>
+                      <!-- menu -->
+                      <nav class="bs-main-navigation  d-none d-lg-block">
+                          <ul id="main-nav" class="nav navbar-nav ">
+                              <li><a href="../index.html">Home</a></li>
+      
+                              <li class="dropdown">
+                                  <a href="#">About</a>
+                                  <ul class="dropdown-menu clearfix">
+                                      <li><a href="../about.html">About Us</a></li>
+                                      <li><a href="../behind-the-craft.html">Behind the Craft</a></li>
+                                  </ul>
+                              </li>
 
-                                    <li><a href="../projects.html">Our Projects</a></li>
+                              <li><a href="../projects.html">Our Projects</a></li>
 
-                                    <li><a href="../products.html">Our Products</a></li>
+                              <li><a href="../products.html">Our Products</a></li>
 
-                                    <li><a href="../blogs/blog.html">Our Blogs</a></li>
-        
-                                    <li><a href="../contact-us.html">Contact Us</a></li>
-                                </ul>
-                            </nav>
+                              <li><a href="../blogs/blog.html">Our Blogs</a></li>
+      
+                              <li><a href="../contact-us.html">Contact Us</a></li>
+                          </ul>
+                      </nav>
     
-                            <!-- search-btn -->
-                            <button class="bs-search-btn-1 search_btn_toggle" style="background: transparent;">
-                              <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                            </button>
-                        </div>
-                    </div>
+                      <!-- search-btn -->
+                      <button class="bs-search-btn-1 search_btn_toggle" style="background: transparent;">
+                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                      </button>
+                  </div>
+              </div>
 
-                    <!-- offcanvas-btn -->
-                    <button class="bs-offcanvas-btn-2 offcanvas_toggle">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </button>
+              <!-- offcanvas-btn -->
+              <button class="bs-offcanvas-btn-2 offcanvas_toggle">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+              </button>
 
-                </div>
-            </header>
+          </div>
+      </header>
             <!-- header-end -->
 
             <!-- breadcrumb-start -->
