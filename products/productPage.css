@@ -18,7 +18,7 @@
 /* Mobile */
 @media (max-width: 600px) {
   .pg-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 18px 12px;
     gap: 10px;
   }
