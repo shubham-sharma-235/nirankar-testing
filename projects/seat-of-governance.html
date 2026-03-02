@@ -33,6 +33,17 @@
             .bs-core-feature-4-wrap {
                 background-color: #fff;
             }
+            .bs-header-3-area {
+            position: relative;
+            z-index: 999; /* Isse header sabse upar rahega */
+            width: 100%;
+            }
+
+            .bs-header-3-main.d-flex.align-items-center {
+                height: 5rem;
+                background: #1f1f1f !important; /* Force background color */
+                display: flex !important; /* Ensure it stays visible */
+            }
         </style>
     </head>
 
@@ -55,13 +66,13 @@
             </div>
 
             <!-- start preloader -->
-            <div class="lw-preloader">
+            <!-- <div class="lw-preloader">
                 <div class="lw-preloader-content">
                     <div class="bs-preloader-logo">
                         <img src="../assets/img/logo/logo-2.svg" alt="">
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- end preloader -->
 
             <!-- header-start -->
@@ -200,7 +211,7 @@
             <!-- contact-start -->
             <section class="bs-contact-4-area wa-fix wa-p-relative">
                 <div class="bs-contact-4-bg wa-fix wa-img-cover wa-p-relative">
-                    <img class="wa-parallax-img" src="../assets/img/choose/ch4-bg-img-1.png" alt="">
+                    <img class="wa-parallax-img" src="../assets/img/choose/ch4-bg-img-1.webp" alt="">
                     <img src="../assets/img/contact/c4-grow-1.png" alt="" class="glow-1">
                 </div>
                 <div class="container bs-container-2">
@@ -381,6 +392,10 @@
                                <a href="../about.html">About Us</a>
                            </li>
                    
+                           <li>
+                               <a href="../behind-the-craft.html">Behind The Craft</a>
+                           </li>
+
                            <li>
                                <a href="../projects.html">Our Projects</a>
                            </li>

@@ -30,6 +30,52 @@
             .bs-main-navigation .dropdown .dropdown-menu li a {
                 color: #000 !important;
             }
+            .bs-core-feature-6-wrap {
+            display: flex;
+            gap: 24px;
+            }
+
+            /* @media (max-width: 768px) {
+            .bs-core-feature-6-wrap {
+                flex-direction: column;
+            }
+            }
+            .bs-core-feature-6-wrap {
+            display: flex;
+            gap: 24px;
+            } */
+
+            @media (max-width: 768px) {
+            .bs-core-feature-6-wrap {
+                flex-direction: column;
+            }
+
+            .bs-core-feature-4-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .bs-core-feature-4-item .item-icon {
+                display: flex;
+                justify-content: center;
+            }
+            }
+
+            /* @media (max-width: 768px) {
+            .bs-core-feature-4-item {
+                text-align: center;
+                align-items: center;
+            }
+
+            .bs-core-feature-4-item .item-icon {
+                display: flex;
+                justify-content: center;
+            }
+            } */
+
+
         </style>
     </head>
 
@@ -167,7 +213,7 @@
             <!-- breadcrumb-end -->
 
             <!-- core-feature-start -->
-            <section class="bs-core-feature-6-area  pt-125 ">
+            <section class="bs-core-feature-6-area  pt-90">
                 <div class="container bs-container-1">
                     <div class="bs-core-feature-4-line wa-scaleXInUp"></div>
                     <div class="bs-core-feature-6-wrap">
@@ -217,7 +263,7 @@
             <!-- core-feature-end -->
 
             <!-- contact-form-start -->
-            <section class="bs-contact-6-area pt-130 pb-160">
+            <section class="bs-contact-6-area pt-70 pb-70">
                 <div class="container bs-container-1">
                     <div class="bs-contact-6-wrap">
 
@@ -281,6 +327,65 @@
                 </div>
             </section>
             <!-- contact-form-end -->
+
+            <!-- insta -->
+            <section class="insta-feed-area pt-80 pb-80" style="background: #ffffff; border-top: 1px solid #f2f2f2;">
+                <div class="container-fluid p-0"> <div class="section-title-wrap text-center mb-40">
+                        <h6 class="bs-subtitle-5" style="font-size: 15px; letter-spacing: 2px; margin-bottom: 10px;">
+                            Instagram
+                        </h6>
+                        <h3 style="font-size: 20px; font-weight: 500; letter-spacing: 3px; color: #1a1a1a; text-transform: uppercase;">
+                            Follow us @NIRANKARSANDSTONES
+                        </h3>
+                    </div>
+
+                    <div class="insta-grid-wrapper">
+                        
+                        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                        <iframe src="https://cdn.lightwidget.com/widgets/47ca6e160e475152a35e5c95a242e002.html" 
+                            scrolling="no" 
+                            allowtransparency="true" 
+                            class="lightwidget-widget" 
+                            style="width:100%;border:0;overflow:hidden;">
+                        </iframe>
+                    </div>
+
+                    <div class="text-center mt-40">
+                        <a href="https://www.instagram.com/stonekarigaribynirankar/" target="_blank" class="bs-pr-btn-3">
+                            <span class="text">View Profile <i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <style>
+                
+                .insta-grid-wrapper {
+                    width: 100%;
+                    line-height: 0;
+                    padding: 0 10px; 
+                }
+                
+                .lightwidget-widget {
+                    transition: transform 0.4s ease;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    border: 1px solid #f0f0f0;
+                }
+                
+                /* Responsive adjustment */
+                @media (max-width: 768px) {
+                    .insta-feed-area {
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                    }
+                    .section-title-wrap h3 {
+                        font-size: 14px;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            </style>
+
+            <!-- insta grid end -->
 
             <!-- map-start -->
             <div class="bs-contact-page-map">
@@ -413,6 +518,10 @@
                    
                            <li>
                                <a href="./about.html">About Us</a>
+                           </li>
+
+                           <li>
+                               <a href="./behind-the-craft.html">Behind The Craft</a>
                            </li>
                    
                            <li>
